@@ -1,2 +1,2 @@
 # anonfile-dl
-auto downloader file tanpa ribet hehe 
+need installed : wget && curl && grep
