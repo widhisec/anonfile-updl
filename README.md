@@ -1,2 +1,2 @@
 # anonfile-dl
-need installed : wget && curl && grep
+need installed : apt install wget && curl && grep
