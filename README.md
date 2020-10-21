@@ -1,4 +1,4 @@
-# anonfile download dan upload 
+# anonfile download and upload 
 need installed : 
 ```
 apt install wget 
