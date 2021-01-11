@@ -2,11 +2,11 @@
 # tools sederhana fungsi buat mengupload sebuah file gak tau nih banyak soalnya xD
 # karya widhisec support me :)
 request(){
-	req=$(curl -s "https://anonfile.com")
-token=$(echo -e "$req" | grep "X-CSRF-Token" | gawk '{ print $3 }' | gawk -F "}}" '{print $1}' | tr -d "''")
+	   req=$(curl -s "https://anonfile.com")
+           token=$(echo -e "$req" | grep "X-CSRF-Token" | gawk '{ print $3 }' | gawk -F "}}" '{print $1}' | tr -d "''")
 	   oaoax00x0=$(curl --url 'https://api.anonfile.com/upload' -H 'origin: https://anonfile.com' -H "x-csrf-token: $token" -F "file=@${fl3}" -s)
-	  short=$(echo $oaoax00x0 | grep -Po '(?<="short":)(.*?)(?=})' | tr -d '""') 
-       echo -e "\033[0;36m[\033[0;33m*\033[0;33m]\033[0;36m output : ${short}"
+	   short=$(echo $oaoax00x0 | grep -Po '(?<="short":)(.*?)(?=})' | tr -d '""') 
+           echo -e "\033[0;36m[\033[0;33m*\033[0;33m]\033[0;36m output : ${short}"
 }
 
 echo -e "
